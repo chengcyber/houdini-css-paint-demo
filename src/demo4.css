@@ -1,0 +1,38 @@
+.container4 {
+  position: relative;
+}
+
+.container4 .hint {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.polka-dot {
+  --dot-spacing: 20px;
+  --dot-fade-offset: 0%;
+  --dot-color: #40e0d0;
+  background: paint(polka-dot-fade);
+
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.polka-dot:hover, .polka-dot:focus {
+  outline: 1px solid #fff;
+  animation: pulse 2s ease-out 6 alternate;
+}
+
+@keyframes pulse {
+  from {
+    --dot-fade-offset: 0%;
+    --dot-color: #fc466b;
+  }
+  to {
+    --dot-fade-offset: 100%;
+    --dot-color: #3f5efb;
+  }
+}

@@ -1,0 +1,27 @@
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+.bg-demo3 {
+  background-image: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+}
+
+.placeholder-jagged-props {
+  background-image: paint(jagged-edge);
+  width: 300px;
+  height: 150px;
+  margin-top: 60px;
+}
+
+.placeholder-jagged-props:nth-child(1) {
+  --tooth-width: 50px;
+  --tooth-height: 25px;
+}
+.placeholder-jagged-props:nth-child(2) {
+  --tooth-width: 2rem;
+  --tooth-height: 3rem;
+}
+.placeholder-jagged-props:nth-child(3) {
+  --tooth-width: calc(33vw - 31px);
+  --tooth-height: 2em;
+}
